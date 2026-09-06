@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * تغییر آدرس صفحه لاگین وردپرس
+ * 
+ * این کدها به فایل functions.php قالب اضافه می‌شوند.
+ * برای تغییر آدرس، مقدار 'your-url.php' را به آدرس دلخواه خود تغییر دهید.
+ */
+
 function custom_login_redirect() {
     $request_uri = $_SERVER['REQUEST_URI'];
     if (strpos($request_uri, '/wp-login.php') !== false || $request_uri === '/wp-admin') {
